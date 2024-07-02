@@ -21,7 +21,7 @@ import java.nio.FloatBuffer;
  */
 @SuppressWarnings("ALL")
 @Mixin(value = RenderUtils.class, remap = false)
-public abstract class RenderUtilsScissorAlignmentMixin {
+public abstract class RenderUtilsScissorAlignment3Mixin {
     /**
      * A cached rectangle, created when the local variables are captured and used when the rectangle would be created.
      */

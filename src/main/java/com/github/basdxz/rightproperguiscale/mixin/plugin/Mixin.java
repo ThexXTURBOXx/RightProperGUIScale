@@ -48,7 +48,8 @@ public enum Mixin implements IMixin {
     /**
      * Better Questing specific Mixins.
      */
-    RenderUtilsScissorAlignmentMixin(CLIENT, require(BETTER_QUESTING), "betterquesting.RenderUtilsScissorAlignmentMixin"),
+    //RenderUtilsScissorAlignment3Mixin(CLIENT, require(BETTER_QUESTING_3), "betterquesting.RenderUtilsScissorAlignment3Mixin"),
+    RenderUtilsScissorAlignment2Mixin(CLIENT, require(BETTER_QUESTING_2), "betterquesting.RenderUtilsScissorAlignment2Mixin"),
     ;
 
     private final Side side;

@@ -13,12 +13,14 @@ import static com.falsepattern.lib.mixin.ITargetedMod.PredicateHelpers.startsWit
 @Getter
 @RequiredArgsConstructor
 public enum TargetedMod implements ITargetedMod {
-    OPTIFINE("OptiFine", false, startsWith("optifine")),
-    BETTER_LOADING_SCREEN("BetterLoadingScreen", false, startsWith("betterloadingscreen")),
-    BETTER_QUESTING("BetterQuesting", true, startsWith("betterquesting")),
+    OPTIFINE("OptiFine", false, startsWith("optifine"), null),
+    BETTER_LOADING_SCREEN("BetterLoadingScreen", false, startsWith("betterloadingscreen"), null),
+    BETTER_QUESTING_2("BetterQuesting", true, startsWith("betterquesting"), startsWith("3")),
+    BETTER_QUESTING_3("BetterQuesting", true, startsWith("betterquesting"), startsWith("2")),
     ;
 
     private final String modName;
     private final boolean loadInDevelopment;
     private final Predicate<String> condition;
+    private final Predicate<String> version;
 }
